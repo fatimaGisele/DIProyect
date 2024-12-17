@@ -3,7 +3,7 @@ package com.di.app.diproyect.Repositories;
 import java.util.Arrays;
 import java.util.List;
 
-import com.di.app.diproyect.Controllers.Product;
+import com.di.app.diproyect.Models.Product;
 
 public class ProductRepository {
 

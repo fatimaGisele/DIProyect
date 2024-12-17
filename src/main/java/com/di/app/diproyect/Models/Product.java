@@ -1,7 +1,6 @@
-package com.di.app.diproyect.Controllers;
+package com.di.app.diproyect.Models;
 
 public class Product {
-    
     private Long id;
     private String name;
     private Long price;
@@ -37,6 +36,4 @@ public class Product {
     public Long getPrice() {
         return price;
     }
-
-    
 }
