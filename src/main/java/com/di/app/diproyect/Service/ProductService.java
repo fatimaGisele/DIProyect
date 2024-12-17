@@ -7,15 +7,15 @@ import com.di.app.diproyect.Models.Product;
 import com.di.app.diproyect.Repositories.ProductRepository;
 
 
-public class ProductService { //Accede a los datos atraves de los repostorios y los trabaja
+public class ProductService { //trabaja los datos
 
     private ProductRepository repository= new ProductRepository();
 
     public List<Product> FindAll(){
         return repository.FindAll().stream().map(p->{
-            Double imp = p.getPrice()*1.21d; 
-            p.setPrice(imp.longValue());
-            return p;
+            Double imp = p.getPrice()*1.21d; //se crea una nueva instancia de producto y se lo duvuelve, no modifica al original, ni aun ante 
+            Product nProduct = new Product(p.getId(),p.getName(),imp.longValue()); //un nuevo llamado
+            return nProduct;
         }).collect(Collectors.toList());
     }
 

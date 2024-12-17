@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.di.app.diproyect.Models.Product;
 
-public class ProductRepository {
+public class ProductRepository { //consulta los datos 
 
     private List<Product> data;
 
@@ -13,7 +13,7 @@ public class ProductRepository {
         this.data = Arrays.asList(
             new Product(1L,  "airpods",50000L),
             new Product(2L,  "aURISs",50000L),
-            new Product(2L,  "teclado",30000L));
+            new Product(3L,  "teclado",30000L));
     }
 
     public List<Product> FindAll(){
