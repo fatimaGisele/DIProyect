@@ -1,6 +1,6 @@
 package com.di.app.diproyect.Models;
 
-public class Product {
+public class Product implements Cloneable{
     private Long id;
     private String name;
     private Long price;
@@ -36,4 +36,15 @@ public class Product {
     public Long getPrice() {
         return price;
     }
+
+    @Override
+    public Object clone() {
+        try {
+            return super.clone();
+        } catch (Exception e) {
+            return new Product(id, name, price);
+        }
+       
+    }
+    
 }

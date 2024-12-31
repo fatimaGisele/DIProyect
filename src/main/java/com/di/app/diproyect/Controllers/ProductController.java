@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.di.app.diproyect.Models.Product;
 import com.di.app.diproyect.Service.ProductService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/api")
 public class ProductController {
 
-    private ProductService service = new ProductService();
+    @Autowired
+    private ProductService service;
 
     public ProductController(){}
 
