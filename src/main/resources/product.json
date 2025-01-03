@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "airpods",
+        "price": 60500
+    },
+    {
+        "id": 2,
+        "name": "aURISs",
+        "price": 60500
+    },
+    {
+        "id": 3,
+        "name": "teclado",
+        "price": 36300
+    },
+    {
+        "id": 4,
+        "name": "celular samsung",
+        "price": 363000
+    },
+    {
+        "id": 5,
+        "name": "kindle",
+        "price": 306300
+    }
+
+]

@@ -3,10 +3,17 @@ package com.di.app.diproyect.Repositories;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
+//import org.springframework.web.context.annotation.RequestScope;
+//import org.springframework.web.context.annotation.SessionScope;
 
 import com.di.app.diproyect.Models.Product;
-@Component
+
+//@RequestScope//deja de ser singleton, es por request x cliente q se comunica
+//@SessionScope 
+@Repository
+//@Primary
 public class ProductRepository implements IProductRepository{ //consulta los datos 
 
     private List<Product> data;
